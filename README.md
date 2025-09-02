@@ -35,10 +35,6 @@
   - Use tools like Atomic Red Team or manual testing (privilege escalation, credential dumping)
   - Verify that alerts are detected and automated responses executed
 
-- **Document Results**
-  - Capture screenshots and logs demonstrating detection and automated response
-  - Refine workflows based on test results
-
 ## Example Screenshots
 - **Ref 1: Network Diagram** – Shows the test lab setup including endpoints, Tines, and LimaCharlie connections.
 - **Ref 2: Tines Workflow** – Example of automated response triggered by a suspicious event.
