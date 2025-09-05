@@ -26,7 +26,7 @@ This project demonstrates how I integrated a **SOAR platform (Tines)** with an *
 
 The following diagram illustrates the playbook workflow:
 
-[![SOAR–EDR Workflow](docs/SOAR-EDR-PLAYBOOK.png)](docs/SOAR-EDR-PLAYBOOK.png)
+<a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/SOAR~EDR%20PLAYBOOK.png"> Architecture Workflow Diagram </a>
 
 **Workflow Summary:**  
 1. **Detection** → LimaCharlie identifies suspicious endpoint activity.  
