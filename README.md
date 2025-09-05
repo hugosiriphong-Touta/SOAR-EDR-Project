@@ -1,41 +1,68 @@
-# Cybersecurity Project – SOAR + EDR with Tines & LimaCharlie
+# SOAR–EDR Integration Project
 
-## Objective
-- Automate the detection and response of endpoint threats by integrating a **SOAR platform (Tines)** with an **EDR tool (LimaCharlie)**.
-- Create automated workflows that respond in real time to suspicious activity on Linux and Windows endpoints.
-- Simulate a real SOC environment for hands-on experience.
+## Project Overview
+This project demonstrates how I integrated a **SOAR platform (Tines)** with an **EDR solution (LimaCharlie)** to automate incident detection and response.  
 
-## Skills Learned
-- Built automated security workflows using Tines SOAR.
-- Monitored and analyzed endpoint activity with LimaCharlie EDR.
-- Planned and executed incident response scenarios.
-- Practiced scripting and automation to integrate multiple security tools.
-- Developed critical thinking and problem-solving skills for SOC operations.
+**Goal:** Reduce manual workload during incident handling by creating an automated playbook capable of:  
+- Detecting suspicious endpoint activity  
+- Sending alerts to communication channels (Slack / Email)  
+- Allowing analyst decisions (isolate or investigate further)  
+- Automating response actions like endpoint isolation  
 
-## Tools Used
-- **Tines** – Automation & SOAR platform
-- **LimaCharlie** – Cloud-native EDR
-- **Linux & Windows endpoints** – Test machines
-- **GitHub** – Documentation and project sharing
-- **Automation/testing tools** – e.g., Atomic Red Team
+---
 
-## Steps
-- **Deploy LimaCharlie Agent**
-  - Install the LimaCharlie agent on Linux/Windows endpoints
-  - Configure detection rules for privilege escalation, persistence, and malware execution
+## Tools & Technologies
+- **SOAR:** Tines  
+- **EDR:** LimaCharlie  
+- **Communication:** Slack, Email  
+- **Automation:** Webhooks, API calls  
+- **Scripting:** PowerShell  
+- **Hosting / Testing:** Vultr  
+- **Repository & References:** GitHub (for scripts, playbooks, and guidance like LaZagne.exe usage)  
 
-- **Configure Tines Integration**
-  - Create Tines stories (automation workflows)
-  - Connect Tines to LimaCharlie via API/webhooks
-  - **Example workflow:**
-    - Trigger: LimaCharlie detects suspicious activity
-    - Action: Tines sends Slack/Teams alert, quarantines host, or creates a Jira ticket
+---
 
-- **Simulate Attacks**
-  - Use tools like Atomic Red Team or manual testing (privilege escalation, credential dumping)
-  - Verify that alerts are detected and automated responses executed
+## Architecture Workflow
 
-## Example Screenshots
-- **Ref 1: Network Diagram** – Shows the test lab setup including endpoints, Tines, and LimaCharlie connections.
-- **Ref 2: Tines Workflow** – Example of automated response triggered by a suspicious event.
-- **Ref 3: Detection Alert** – Screenshot showing LimaCharlie detecting a test attack and triggering the SOAR workflow.
+The following diagram illustrates the playbook workflow:
+
+[![SOAR–EDR Workflow](docs/SOAR-EDR-PLAYBOOK.png)](docs/SOAR-EDR-PLAYBOOK.png)
+
+**Workflow Summary:**  
+1. **Detection** → LimaCharlie identifies suspicious endpoint activity.  
+2. **Alert Forwarding** → Event is sent to Tines.  
+3. **Notification** → Tines sends Slack/Email alerts with details.  
+4. **Analyst Decision** → A user prompt asks whether to isolate the endpoint.  
+   - **YES** → LimaCharlie isolates the endpoint + sends status to Slack.  
+   - **NO** → A message of investigation is sent for further review.  
+
+---
+
+## Features
+- Automated suspicious activity detection and alerting  
+- Slack and Email integration for real-time notifications  
+- Analyst decision-making directly in the workflow  
+- Automatic endpoint isolation when approved  
+- Clear audit trail through Slack updates  
+
+---
+
+## Repository Contents
+- `/docs` → Diagrams, documentation, screenshots
+
+---
+
+## Outcomes & Learning
+- Reduced time between detection and response  
+- Hands-on experience with SOAR orchestration  
+- Learned how to integrate APIs between SOAR, EDR, and communication tools  
+- Gained understanding of incident response workflows and decision automation  
+
+---
+
+## References
+- [Tines Documentation](https://tines.com/docs)  
+- [LimaCharlie API Docs](https://www.limacharlie.io/docs)  
+- [LaZagne Project](https://github.com/AlessandroZ/LaZagne)  
+- [Slack API Documentation](https://api.slack.com)  
+- [Vultr Cloud Hosting](https://www.vultr.com)  
