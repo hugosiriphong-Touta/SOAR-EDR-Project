@@ -1,0 +1,18 @@
+Story - Tines
+Create detection in LimaCharlie - Detect Hacktool >  Tines > Slack & Email
+
+Slack & Email will contain
+Time
+Computer Name
+Source IP
+Process
+Command Line
+File Path
+Sensor ID
+Link to the detection (if applicable)
+
+Tines > Prompt Use to isolate the machine (yes or no)
+if yes: LimaCharlie should automatically isolate the machine and a message should be sent to Slack
+ 	Message: Isolation status with note of  "The computer <computer> has been isolated."
+if no: LimaCharlie will not isolate
+ 	Message: Isolation status with note of "The computer <computer> was not isolated, please investigate."
