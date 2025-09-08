@@ -48,7 +48,7 @@ The following diagram illustrates the playbook workflow:
 ---
 
 ## Repository Contents
-- `/docs` → Diagrams, documentation, screenshots
+- <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/tree/main/documentation"> /documentation </a> → Diagrams, documentation, screenshots
 
 ---
 
