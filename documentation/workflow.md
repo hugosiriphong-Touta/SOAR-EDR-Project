@@ -21,23 +21,19 @@ This project demonstrates the integration of a SOAR platform (Tines) with an EDR
 The SOAR–EDR architecture was designed and implemented inside **Tines**.  
 Because the workflow is large, it is shown in two parts below.
 
-### SOAR Workflow in Tines (Part 1)
-<a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/a1.png">View Screenshot Part 1</a>
-
+### SOAR Workflow in Tines (Part 1) 
+![Tines Workflow Part 1](img/a1.png) 
 ### SOAR Workflow in Tines (Part 2)
-<a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/a2.png">View Screenshot Part 2</a>
+![Tines Workflow Part 2](img/a2.png) 
 
-*Combined, these screenshots represent the full SOAR playbook structure inside Tines, which connects LimaCharlie detections with automated actions such as Slack and Email notifications.*
-
----
-
-## Workflow Steps
-
-1. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/01.png">Endpoint Enrollment</a>  
-2. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/02.png">Attack Simulation</a>  
-3. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/03.png">EDR Detection</a>  
-4. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/04.png">Event Forwarding to SOAR</a>  
-5. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/05.png">SOAR Playbook Trigger</a>  
-6. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/06.png">Slack Notification</a>  
-7. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/07.png">Email Notification</a>  
-8. <a href="https://github.com/hugosiriphong-Touta/SOAR-EDR-Project/blob/main/documentation/img/08.png">Response Action</a>  
+*Combined, these screenshots represent the full SOAR playbook structure inside Tines, which connects LimaCharlie detections with automated actions such as Slack and Email notifications.* --- 
+## Workflow 
+Steps 
+1. [Endpoint Enrollment](img/01.png) 
+2. [Attack Simulation](img/02.png)
+3. [EDR Detection](img/03.png)
+4. [Event Forwarding to SOAR](img/04.png)
+5. [SOAR Playbook Trigger](img/05.png)
+6. [Slack Notification](img/06.png)
+7. [Email Notification](img/07.png)
+8. [Response Action](img/08.png)
