@@ -37,9 +37,18 @@ Steps
 
   *The `lazagne.exe` program was executed on the test machine hosted on Vultr to test the firewall and the security defenses by attempting to access stored credentials, which triggers alerts if blocked.*
 
-3. [EDR Detection](img/03.png)
-4. [Event Forwarding to SOAR](img/04.png)
-5. [SOAR Playbook Trigger](img/05.png)
+3. [Tines Alert Reception](img/03.png)
+
+  *Tines successfully received an alert via webhook from the EDR system. The workflow is triggered automatically, and the firewall rules ensure that incoming alerts are accepted only from trusted sources.*
+   
+4. [Slack Notification](img/04.png)
+
+ *The alert from Tines was forwaded to Slack, providing detailed information about the endpoint event. Firewall and integration rules ensure that only authorized notifications are sent to the designated Stack channel.*
+
+5. [Email Notification](img/05.png)
+
+ *Tines automatically sent an alert via email to the designated recipient, containing all relevant details about the endpoint event. Firewall and email security rules ensure that notifications are sent securely and only to authorized personnel.*
+
 6. [Slack Notification](img/06.png)
-7. [Email Notification](img/07.png)
-8. [Response Action](img/08.png)
+9. [Email Notification](img/07.png)
+10. [Response Action](img/08.png)
