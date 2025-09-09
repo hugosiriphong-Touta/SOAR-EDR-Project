@@ -50,6 +50,7 @@ Steps
  *Tines automatically sent an alert via email to the designated recipient, containing all relevant details about the endpoint event. Firewall and email security rules ensure that notifications are sent securely and only to authorized personnel.*
 
 6. [Endpoint Isolation Prompt](img/061.png)
+   
   *Tines triggered a user prompt asking whether to isolate the endpoint from the network. This allows authorized personnel to make a real-time decision.*
    
 8. [Endpoint Network Isolation](img/07.png)
