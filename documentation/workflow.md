@@ -55,15 +55,15 @@ Steps
    
 8. [Endpoint Network Isolation](img/07.png)
 
-   *The endpoint is now isolated from the network as confirmed in LimaCharlie.*
+ *The endpoint is now isolated from the network as confirmed in LimaCharlie.*
    
 9. [Slack Notification - Endpoint Isolated](img/06.png)
 
-    *Tines sent a Slack notification confirming that the endpoint has been isolated from the network.*
+ *Tines sent a Slack notification confirming that the endpoint has been isolated from the network.*
 
 10. [Network Connectivity Test](img/08.png)
 
-    *The endpoint remains isolated from both external and internal networks. A connectivity test (e.g., pinging 8.8.8.8) confirms that the system infected can't communicate. The isolation will remain in effect until an administrator explicitly restores network access.*
+ *The endpoint remains isolated from both external and internal networks. A connectivity test (e.g., pinging 8.8.8.8) confirms that the system infected can't communicate. The isolation will remain in effect until an administrator explicitly restores network access.*
 
 
 
