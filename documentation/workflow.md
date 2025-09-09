@@ -29,8 +29,14 @@ Because the workflow is large, it is shown in two parts below.
 *Combined, these screenshots represent the full SOAR playbook structure inside Tines, which connects LimaCharlie detections with automated actions such as Slack and Email notifications.* --- 
 ## Workflow 
 Steps 
-1. [Endpoint Enrollment](img/01.png) 
+1. [Endpoint Enrollment](img/01.png)
+
+   *The EDR agent (`touta-soar-edr`) is successfully installed, connected, and the firewall has been configured.*
+   
 2. [Attack Simulation](img/02.png)
+
+  *The `lazagne.exe` program was executed on the test machine hosted on Vultr to test the firewall and the security defenses by attempting to access stored credentials, which triggers alerts if blocked.*
+
 3. [EDR Detection](img/03.png)
 4. [Event Forwarding to SOAR](img/04.png)
 5. [SOAR Playbook Trigger](img/05.png)
